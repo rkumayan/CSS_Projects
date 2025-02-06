@@ -1,0 +1,40 @@
+body{
+    margin:0px;
+}
+.container{
+    border:2px solid red;
+    width:100%;
+    margin:auto;
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    
+}
+.container .btn{
+    border:none;
+    min-height:30px;
+    min-width:30px;
+    margin:10px;
+    border-radius:50%;
+    color:lightgrey;
+
+    animation-name:loading;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes loading{
+    0%{
+        background-color:lightgrey;
+        transform:scale(1);
+    }
+    50%{
+        background-color:darkgrey;
+        transform:scale(1.1);
+    }
+    100%{
+        background-color:lightgrey;
+        transfor:scale(1);
+    }
+}
