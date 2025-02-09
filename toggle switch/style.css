@@ -1,35 +1,37 @@
-body{
-    background-color:lightgrey;
+html, body{
+    margin:0;
+    padding:0;
+    background: #ced0ed;
 }
-.container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+:root{
+    --toggle-switch-bg: #232428;
+    --toggle-border: #232428;
+    --toggle-bg:#fff;
 }
 .toggle-wrap{
-    background:white;
-    border-radius:30px;
+    display:flex;
+    height:100vh;
+    justify-content: center; 
+    align-items: center;
+}
+label{
+    width:100px;
     height:40px;
-    width:90px;
-    padding:2px;    
-    display:flex;        
-    align-items:center;
-    cursor:pointer;
+    border:3px solid var(--toggle-border);
+    border-radius: 40px;
+    padding:.25em;
+    background-color: var(--toggle-bg);
 }
-#toggle{
-    display: none;
+.toggle-input{
+    display:none;
 }
-
-.switch{
-    height:35px;
-    width:35px;
-    background:black;
+.toggle-switch{
+    height:40px;
+    width:40px;
+    background-color:var(--toggle-switch-bg);
     border-radius:50%;
-    position:absolute;
-    transition: all linear .2s;    
+    transition: transform .5s;
 }
-.toggle-wrap #toggle:checked ~ div{
-    background: red;    
-    margin-left:50px;    
+.toggle-input:checked ~ .toggle-switch{
+    transform: translateX( 60px);
 }
