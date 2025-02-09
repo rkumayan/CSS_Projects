@@ -7,19 +7,29 @@ body{
     align-items:center;
     height:100vh;
 }
-.toggle{
+.toggle-wrap{
     background:white;
     border-radius:30px;
     height:40px;
     width:90px;
-    padding:2px;
-    position:relative;
+    padding:2px;    
     display:flex;        
     align-items:center;
+    cursor:pointer;
 }
+#toggle{
+    display: none;
+}
+
 .switch{
     height:35px;
     width:35px;
     background:black;
     border-radius:50%;
+    position:absolute;
+    transition: all linear .2s;    
+}
+.toggle-wrap #toggle:checked ~ div{
+    background: red;    
+    margin-left:50px;    
 }
