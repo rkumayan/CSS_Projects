@@ -1,0 +1,46 @@
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.loader{
+    height:100px;
+    width:100px;                
+    border-radius:50%;
+    border:transparent;
+    animation: loading 2s infinite;
+}
+@keyframes loading{
+    0%{
+        border-left: 10px solid purple;        
+        border-right:10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom:10px solid transparent;
+    }
+    25%{
+        border-top: 10px solid purple;      
+        border-bottom:10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right:10px solid transparent;
+    }
+    50%{
+        border-right: 10px solid purple;        
+        border-left:10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom:10px solid transparent;
+    }
+    75%{
+        border-bottom: 10px solid purple;        
+        border-top:10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right:10px solid transparent;
+    }
+    100%{
+        border-left: 10px solid purple;        
+        border-right:10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom:10px solid transparent;
+    }
+    
+}
