@@ -1,0 +1,35 @@
+body{
+    background-color:lightgrey;
+}
+.container{
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items: center;
+}
+.progress-bar{
+    height:40px;
+    width:300px;
+    background-color:white;
+    border-radius:40px;
+}
+.progress-status{
+    height:40px;
+    border-radius:40px;
+}
+.stage-1{
+    width:25%;
+    background-color:red;
+}
+.stage-2{
+    width:50%;
+    background-color:orangered;
+}
+.stage-3{
+    width:75%;
+    background-color:greenyellow;
+}
+.stage-4{
+    width:100%;
+    background-color:green;
+}
