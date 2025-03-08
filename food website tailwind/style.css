@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.card{
+    @apply relative rounded-xl overflow-hidden w-100 shadow-2xl m-10;
+}
+
+.recipe-title{
+    @apply font-semibold text-center p-2 text-2xl;
+}
+
+.recipe-by{
+    @apply text-slate-500 text-center mb-8;
+}
+
+.duration{
+    @apply bg-slate-200 absolute top-0 rounded-full m-1 p-1;
+}
