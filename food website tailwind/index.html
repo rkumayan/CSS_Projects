@@ -6,27 +6,51 @@
     <title>Food Website In Tailwind</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-slate-200">
-    <div class="flex justify-around flex-wrap">
-        <div class="card">
-            <img src="images/curry.jpg" alt=" Curry image" >
-            <p class="recipe-title">Tofu Curry</p>
-            <p class="recipe-by">Recipe by : komi</p>
-            <p class="duration">25 mins</p>
+<body class="bg-slate-200 font-sans">
+    <!-- content wrapper -->
+    <div class="grid grid-cols-3 border-2 border-red-500">
+        <div class="navbar border-2 border-black">
+            <p class="m-5 text-slate-700 text-2xl uppercase">Food Website</p>
+            <nav class="m-5">
+                <p class="font-semibold">Home</p>
+                <p>About</p>
+                <p>Contact</p>
+            </nav>
+            
         </div>
-        <div class="card">
-            <img src="images/stew.jpg" alt=" Stew image" >
-            <p class="recipe-title"> 5 Been Chilli Stew</p>
-            <p class="recipe-by">Recipe by : John Cena</p>
-            <p class="duration">15  mins</p>
+
+        <div class="col-span-2">
+            <div class="flex text-amber-700 justify-end">
+                <p class="mt-5 mr-5 hover:bg-amber-700 hover:text-white cursor-pointer p-2 rounded">Log in</p>
+                <p class="mt-5 mr-5 hover:bg-amber-700 hover:text-white cursor-pointer p-2 rounded">Sign up</p>
+            </div>
+            <p class="font-semibold text-5xl m-10"> Recipes</p>
+            
+            <!-- card wrapper -->
+            <div class="flex justify-around flex-wrap  border-2 border-blue-500 w-full">            
+                <div class="card">
+                    <img src="images/curry.jpg" alt=" Curry image" >
+                    <p class="recipe-title">Tofu Curry</p>
+                    <p class="recipe-by">Recipe by : komi</p>
+                    <p class="duration">25 mins</p>
+                </div>
+                <div class="card">
+                    <img src="images/stew.jpg" alt=" Stew image" >
+                    <p class="recipe-title"> 5 Been Chilli Stew</p>
+                    <p class="recipe-by">Recipe by : John Cena</p>
+                    <p class="duration">15  mins</p>
+                </div>
+                <div class="card">
+                    <img src="images/noodles.jpg" alt=" Noodles image" >
+                    <p class="recipe-title">Veg Noodles</p>
+                    <p class="recipe-by">Recipe by : sam</p>
+                    <p class="duration">4 mins</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <img src="images/noodles.jpg" alt=" Noodles image" >
-            <p class="recipe-title">Veg Noodles</p>
-            <p class="recipe-by">Recipe by : sam</p>
-            <p class="duration">4 mins</p>
-        </div>
+        
     </div>
+    
     
 </body>
 </html>
